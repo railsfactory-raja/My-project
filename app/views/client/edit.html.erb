@@ -1,0 +1,11 @@
+<h1>Client#edit</h1>
+ <%= form_tag(@client,:method=>:put)  do -%>
+<div class="field">
+
+    <%= text_field_tag "name", @client.client_name %><br/>
+		<%= text_field_tag "address", @client.client_address  %><br/>
+		<%= text_field_tag "contact", @client.client_contact %><br/>
+  </div> 
+    <div><%= submit_tag 'Update' %></div>
+ <% end -%>
+<p>Find me in app/views/client/edit.html.erb</p>

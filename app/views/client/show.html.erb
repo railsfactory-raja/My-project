@@ -1,0 +1,21 @@
+<h1>Client#show</h1>
+
+<table>
+  <tr>
+    <th>Client name</th>
+    <th>Address</th>
+    <th>Mobile</th>
+    <th></th>
+
+  </tr>
+
+  <tr>
+    <td><%= @client.client_name %></td>
+    <td><%= @client.client_address %></td>
+    <td><%= @client.client_contact %></td>
+    <td><%= link_to 'Edit', "/client/#{@client.id}/edit" %> | <%= link_to 'Back', "/client" %> </td>
+		
+
+  </tr>
+</table>
+<p>Find me in app/views/client/show.html.erb</p>
